@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_usergroups</name>
+    <creationDate>2014-11-19</creationDate>
+    <copyright>Copyright (C) 2014 Peter Martin. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Peter Martin</author>
+    <authorEmail>joomla@db8.nl</authorEmail>
+    <authorUrl>http://www.db8.nl</authorUrl>
+    <version>1.0.0</version>
+    <description>Component to manage &amp; list User Groups</description>
+    
+    <scriptfile>script.php</scriptfile>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>usergroups.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+        <folder>language</folder>
+    </files>
+    <administration>
+        <menu img="components/com_usergroups/assets/images/s_com_usergroups.png" >COM_USERGROUPS</menu>
+        <submenu>
+            <menu link="option=com_usergroups&amp;view=usergroups" view="usergroups" img="components/com_usergroups/assets/images/s_usergroups.png" alt="Usergroups/Usergroups">COM_USERGROUPS_TITLE_USERGROUPS</menu>
+            <menu link="option=com_categories&amp;extension=com_usergroups" view="categories" img="components/com_usergroups/assets/images/s_usergroups.png" alt="Usergroups/Categories">COM_USERGROUPS_USERGROUPS_CATID</menu>
+            <menu link="option=com_usergroups&amp;view=contacts" view="contacts" img="components/com_usergroups/assets/images/s_contacts.png" alt="Usergroups/Contacts">COM_USERGROUPS_TITLE_CONTACTS</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>usergroups.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>language</folder>
+        </files>
+    </administration>
+    <plugins>
+        <plugin group="search" plugin="usergroups"/>
+    </plugins>
+    <modules>
+        <module module="mod_usergroups" />
+    </modules>
+</extension>
