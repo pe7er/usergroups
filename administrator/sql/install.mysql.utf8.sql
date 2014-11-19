@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `#__usergroups` (
+CREATE TABLE IF NOT EXISTS `#__usergroups_groups` (
 `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
 
 `title` VARCHAR(255)  NOT NULL ,

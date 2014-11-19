@@ -21,7 +21,7 @@ class UsergroupsTableusergroup extends JTable {
      * @param JDatabase A database connector object
      */
     public function __construct(&$db) {
-        parent::__construct('#__usergroups', 'id', $db);
+        parent::__construct('#__usergroups_groups', 'id', $db);
     }
 
     /**

@@ -68,7 +68,7 @@ class ModUsergroupsHelper {
         
         switch ($table_name) {
             
-		case '#__usergroups':
+		case '#__usergroups_groups':
 		switch($field_name){
 		case 'id':
 		$result = $field_value;

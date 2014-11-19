@@ -176,7 +176,7 @@ class UsergroupsModelUsergroups extends JModelList
                 )
             );
 
-        $query->from('`#__usergroups` AS a');
+        $query->from('`#__usergroups_groups` AS a');
 
         
     // Join over the users for the checked out user.

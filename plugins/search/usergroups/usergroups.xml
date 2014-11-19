@@ -12,18 +12,15 @@
     <files>
         <filename plugin="usergroups">usergroups.php</filename>
         <filename>index.html</filename>
-        <folder>language</folder>
-
+        <folder>language</folder>        
     </files>
     <config>
         <fields name="params">
 
             <fieldset name="basic">
-                
                 <field name="search_limit" type="text" default="50" size="5"
                        description="PLG_SEARCH_COM_USERGROUPS_FIELD_SEARCHLIMIT_DESC"
                        label="PLG_SEARCH_COM_USERGROUPS_FIELD_SEARCHLIMIT_LABEL" />
-                
             </fieldset>
 
         </fields>

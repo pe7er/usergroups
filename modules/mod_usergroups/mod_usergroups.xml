@@ -21,46 +21,45 @@
         <fields name="params">
             
             <fieldset name="content_type" 
-                      label="MOD_USERGROUPS_CONTENT_TYPE_TAB_LBL"
-                      description="MOD_USERGROUPS_CONTENT_TYPE_TAB_DESC">
+                label="MOD_USERGROUPS_CONTENT_TYPE_TAB_LBL"
+                description="MOD_USERGROUPS_CONTENT_TYPE_TAB_DESC">
                 
                 <field name="content_type" type="list"
-                       label="MOD_USERGROUPS_CONTENT_TYPE_LBL"
-                       description="MOD_USERGROUPS_CONTENT_TYPE_DESC">
+                    label="MOD_USERGROUPS_CONTENT_TYPE_LBL"
+                    description="MOD_USERGROUPS_CONTENT_TYPE_DESC">
                     <option value="blank">MOD_USERGROUPS_CUSTOM_CONTENT</option>
                     <option value="list">MOD_USERGROUPS_LIST</option>
                     <option value="item">MOD_USERGROUPS_ITEM</option>
                 </field>
                 
             </fieldset>
+            
             <fieldset name="blank_content" 
-                      label="MOD_USERGROUPS_CUSTOM_CONTENT_TAB_LBL"
-                      description="MOD_USERGROUPS_CUSTOM_CONTENT_TAB_DESC">
-                
+                label="MOD_USERGROUPS_CUSTOM_CONTENT_TAB_LBL"
+                description="MOD_USERGROUPS_CUSTOM_CONTENT_TAB_DESC">
+            
                 <field name="html_content" type="editor" filter="safehtml"
-                       label="MOD_USERGROUPS_HTML_LBL"
-                       description="MOD_USERGROUPS_HTML_DESC" />
-                
+                    label="MOD_USERGROUPS_HTML_LBL"
+                    description="MOD_USERGROUPS_HTML_DESC" />
             </fieldset>
             
             <fieldset name="list_content" 
-                      label="MOD_USERGROUPS_LIST_CONTENT_TAB_LBL"
-                      description="MOD_USERGROUPS_LIST_CONTENT_TAB_DESC">
+                label="MOD_USERGROUPS_LIST_CONTENT_TAB_LBL"
+                description="MOD_USERGROUPS_LIST_CONTENT_TAB_DESC">
                 
                 <field name="table" type="list"
                        label="MOD_USERGROUPS_TABLE_LBL"
                        description="MOD_USERGROUPS_TABLE_DESC">
-                    
-                    <option value="#__usergroups">#__usergroups</option>
+                    <option value="#__usergroups_groups">#__usergroups_groups</option>
                     <option value="#__usergroups_contacts">#__usergroups_contacts</option>
                 </field>
-                
+
                 <field 
                     name="field" type="groupedlist" default=""
                     label="MOD_USERGROUPS_FIELD_LBL"
                     description="MOD_USERGROUPS_FIELD_DESC">
                     
-                    <group label="#__usergroups">
+                    <group label="#__usergroups_groups">
                         <option value="id">id</option>
                         <option value="title">title</option>
                         <option value="slug">slug</option>
@@ -105,37 +104,32 @@
                         <option value="created_by">created_by</option>
                     </group>
                 </field>
-                <field 
-                    name="offset" type="text" default="0" filter="uint" class="input-small"
-                    label="MOD_USERGROUPS_OFFSET_LBL"
-                    description="MOD_USERGROUPS_OFFSET_DESC" />
-                <field 
-                    name="limit" type="text" default="10" filter="uint" class="input-small"
-                    label="MOD_USERGROUPS_LIMIT_LBL"
-                    description="MOD_USERGROUPS_LIMIT_DESC" />
+                <field name="offset" type="text" default="0" filter="uint" class="input-small"
+                       label="MOD_USERGROUPS_OFFSET_LBL"
+                       description="MOD_USERGROUPS_OFFSET_DESC" />
+                
+                <field name="limit" type="text" default="10" filter="uint" class="input-small"
+                       label="MOD_USERGROUPS_LIMIT_LBL"
+                       description="MOD_USERGROUPS_LIMIT_DESC" />
             </fieldset>
-
-            <fieldset 
-                name="item_content" 
-                label="MOD_USERGROUPS_ITEM_CONTENT_TAB"
-                description="MOD_USERGROUPS_ITEM_CONTENT_TAB_DESC">
-
-                <field
-                    name="item_table" type="list"
-                    label="MOD_USERGROUPS_TABLE_LBL"
-                    description="MOD_USERGROUPS_TABLE_DESC">
-                    <option value="#__usergroups">#__usergroups</option>
+            
+            <fieldset name="item_content" 
+                      label="MOD_USERGROUPS_ITEM_CONTENT_TAB"
+                      description="MOD_USERGROUPS_ITEM_CONTENT_TAB_DESC">
+                
+                <field name="item_table" type="list"
+                       label="MOD_USERGROUPS_TABLE_LBL"
+                       description="MOD_USERGROUPS_TABLE_DESC">
+                    
+                    <option value="#__usergroups_groups">#__usergroups_groups</option>
                     <option value="#__usergroups_contacts">#__usergroups_contacts</option>
                 </field>
-
                 <field 
                     name="item_id" type="text" filter="uint" class="input-small"
                     label="MOD_USERGROUPS_ITEM_ID_LBL"
                     description="MOD_USERGROUPS_ITEM_ID_DESC"
                 />
-
             </fieldset>
-
         </fields>
     </config>
 </extension>

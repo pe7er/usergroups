@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <component>
-  <table action="add" table_name="#__usergroups" storage_engine="InnoDB" collation="utf8_general_ci">
+  <table action="change" old_name="#__usergroups" new_name="#__usergroups_groups" table_name="#__usergroups_groups" storage_engine="InnoDB" collation="utf8_general_ci">
     <field field_name="id" field_type="INT" field_length="11" is_autoincrement="1" description=""/>
     <field field_name="title" field_type="VARCHAR" field_length="255" description=""/>
     <field field_name="slug" field_type="VARCHAR" field_length="255" description=""/>

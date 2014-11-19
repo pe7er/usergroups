@@ -114,7 +114,7 @@ class UsergroupsModelUsergroup extends JModelAdmin
 			// Set ordering to the last item if not set
 			if (@$table->ordering === '') {
 				$db = JFactory::getDbo();
-				$db->setQuery('SELECT MAX(ordering) FROM #__usergroups');
+				$db->setQuery('SELECT MAX(ordering) FROM #__usergroups_groups');
 				$max = $db->loadResult();
 				$table->ordering = $max+1;
 			}
