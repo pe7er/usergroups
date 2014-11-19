@@ -16,5 +16,4 @@ Features to develop:
 6. Search filter to search within a specified radius around an address
 7. Ability to report an inactive User Groups or problems with a listings like dead links.
 8. Component should have certain events that can trigger Joomla Plugins
-
-
+9. Should support multilingual for JUG listings
