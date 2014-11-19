@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade" client="site">
+    <name>MOD_USERGROUPS_NAME</name>
+    <creationDate>2014-11-19</creationDate>
+    <copyright>Copyright (C) 2014 Peter Martin. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Peter Martin</author>
+    <authorEmail>joomla@db8.nl</authorEmail>
+    <authorUrl>http://www.db8.nl</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_USERGROUPS_DESCRIPTION</description>
+    
+    <files>
+        <filename module="mod_usergroups">mod_usergroups.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    <config>
+        <fields name="params">
+            
+            <fieldset name="content_type" 
+                      label="MOD_USERGROUPS_CONTENT_TYPE_TAB_LBL"
+                      description="MOD_USERGROUPS_CONTENT_TYPE_TAB_DESC">
+                
+                <field name="content_type" type="list"
+                       label="MOD_USERGROUPS_CONTENT_TYPE_LBL"
+                       description="MOD_USERGROUPS_CONTENT_TYPE_DESC">
+                    <option value="blank">MOD_USERGROUPS_CUSTOM_CONTENT</option>
+                    <option value="list">MOD_USERGROUPS_LIST</option>
+                    <option value="item">MOD_USERGROUPS_ITEM</option>
+                </field>
+                
+            </fieldset>
+            <fieldset name="blank_content" 
+                      label="MOD_USERGROUPS_CUSTOM_CONTENT_TAB_LBL"
+                      description="MOD_USERGROUPS_CUSTOM_CONTENT_TAB_DESC">
+                
+                <field name="html_content" type="editor" filter="safehtml"
+                       label="MOD_USERGROUPS_HTML_LBL"
+                       description="MOD_USERGROUPS_HTML_DESC" />
+                
+            </fieldset>
+            
+            <fieldset name="list_content" 
+                      label="MOD_USERGROUPS_LIST_CONTENT_TAB_LBL"
+                      description="MOD_USERGROUPS_LIST_CONTENT_TAB_DESC">
+                
+                <field name="table" type="list"
+                       label="MOD_USERGROUPS_TABLE_LBL"
+                       description="MOD_USERGROUPS_TABLE_DESC">
+                    
+                    <option value="#__usergroups">#__usergroups</option>
+                    <option value="#__usergroups_contacts">#__usergroups_contacts</option>
+                </field>
+                
+                <field 
+                    name="field" type="groupedlist" default=""
+                    label="MOD_USERGROUPS_FIELD_LBL"
+                    description="MOD_USERGROUPS_FIELD_DESC">
+                    
+                    <group label="#__usergroups">
+                        <option value="id">id</option>
+                        <option value="title">title</option>
+                        <option value="slug">slug</option>
+                        <option value="catid">catid</option>
+                        <option value="categories">categories</option>
+                        <option value="description">description</option>
+                        <option value="meetinginfo">meetinginfo</option>
+                        <option value="location">location</option>
+                        <option value="address">address</option>
+                        <option value="postcode">postcode</option>
+                        <option value="city">city</option>
+                        <option value="region">region</option>
+                        <option value="country">country</option>
+                        <option value="lat">lat</option>
+                        <option value="lng">lng</option>
+                        <option value="website">website</option>
+                        <option value="usergroupemail">usergroupemail</option>
+                        <option value="logo">logo</option>
+                        <option value="photo">photo</option>
+                        <option value="twitter">twitter</option>
+                        <option value="linkedin">linkedin</option>
+                        <option value="facebook">facebook</option>
+                        <option value="googleplus">googleplus</option>
+                        <option value="rssfeed">rssfeed</option>
+                        <option value="meetup_apikey">meetup_apikey</option>
+                        <option value="meetup_groupid">meetup_groupid</option>
+                        <option value="fullprovisional">fullprovisional</option>
+                        <option value="teamdetails">teamdetails</option>
+                        <option value="active">active</option>
+                        <option value="version">version</option>
+                        <option value="language">language</option>
+                        <option value="hits">hits</option>
+                        <option value="created_by">created_by</option>
+                    </group>
+                    <group label="#__usergroups_contacts">
+                        <option value="id">id</option>
+                        <option value="usergroupid">usergroupid</option>
+                        <option value="user">user</option>
+                        <option value="contactname">contactname</option>
+                        <option value="contactphone">contactphone</option>
+                        <option value="contactemail">contactemail</option>
+                        <option value="created_by">created_by</option>
+                    </group>
+                </field>
+                <field 
+                    name="offset" type="text" default="0" filter="uint" class="input-small"
+                    label="MOD_USERGROUPS_OFFSET_LBL"
+                    description="MOD_USERGROUPS_OFFSET_DESC" />
+                <field 
+                    name="limit" type="text" default="10" filter="uint" class="input-small"
+                    label="MOD_USERGROUPS_LIMIT_LBL"
+                    description="MOD_USERGROUPS_LIMIT_DESC" />
+            </fieldset>
+
+            <fieldset 
+                name="item_content" 
+                label="MOD_USERGROUPS_ITEM_CONTENT_TAB"
+                description="MOD_USERGROUPS_ITEM_CONTENT_TAB_DESC">
+
+                <field
+                    name="item_table" type="list"
+                    label="MOD_USERGROUPS_TABLE_LBL"
+                    description="MOD_USERGROUPS_TABLE_DESC">
+                    <option value="#__usergroups">#__usergroups</option>
+                    <option value="#__usergroups_contacts">#__usergroups_contacts</option>
+                </field>
+
+                <field 
+                    name="item_id" type="text" filter="uint" class="input-small"
+                    label="MOD_USERGROUPS_ITEM_ID_LBL"
+                    description="MOD_USERGROUPS_ITEM_ID_DESC"
+                />
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>

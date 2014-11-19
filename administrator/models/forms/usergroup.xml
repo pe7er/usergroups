@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_USERGROUPS_FORM_LBL_USERGROUP_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="title" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_TITLE"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_TITLE" 
+                
+                
+                 /> 
+
+       <field name="slug" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_SLUG"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_SLUG" 
+                
+                
+                 /> 
+
+       <field name="catid" type="category"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_CATID"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_CATID" 
+                 default="0" 
+                
+                
+            extension="com_usergroups" /> 
+
+       <field name="categories" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_CATEGORIES"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_CATEGORIES" 
+                
+                
+                 /> 
+
+       <field name="description" type="textarea"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_DESCRIPTION"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_DESCRIPTION" 
+                
+                
+                 /> 
+
+       <field name="meetinginfo" type="textarea"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_MEETINGINFO"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_MEETINGINFO" 
+                
+                
+                 /> 
+
+       <field name="location" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_LOCATION"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_LOCATION" 
+                
+                
+                 /> 
+
+       <field name="address" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_ADDRESS"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_ADDRESS" 
+                
+                
+                 /> 
+
+       <field name="postcode" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_POSTCODE"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_POSTCODE" 
+                
+                
+                 /> 
+
+       <field name="city" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_CITY"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_CITY" 
+                
+                
+                 /> 
+
+       <field name="region" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_REGION"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_REGION" 
+                
+                
+                 /> 
+
+       <field name="country" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_COUNTRY"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_COUNTRY" 
+                
+                
+                 /> 
+
+       <field name="lat" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_LAT"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_LAT" 
+                 default="0" 
+                
+                 /> 
+
+       <field name="lng" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_LNG"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_LNG" 
+                 default="0" 
+                
+                 /> 
+
+       <field name="website" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_WEBSITE"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_WEBSITE" 
+                
+                
+                 /> 
+
+       <field name="usergroupemail" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_USERGROUPEMAIL"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_USERGROUPEMAIL" 
+                
+                
+                 /> 
+
+       <field name="logo" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_LOGO"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_LOGO" 
+                
+                
+                 /> 
+
+       <field name="photo" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_PHOTO"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_PHOTO" 
+                
+                
+                 /> 
+
+       <field name="twitter" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_TWITTER"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_TWITTER" 
+                
+                
+                 /> 
+
+       <field name="linkedin" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_LINKEDIN"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_LINKEDIN" 
+                
+                
+                 /> 
+
+       <field name="facebook" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_FACEBOOK"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_FACEBOOK" 
+                
+                
+                 /> 
+
+       <field name="googleplus" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_GOOGLEPLUS"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_GOOGLEPLUS" 
+                
+                
+                 /> 
+
+       <field name="rssfeed" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_RSSFEED"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_RSSFEED" 
+                
+                
+                 /> 
+
+       <field name="meetup_apikey" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_MEETUP_APIKEY"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_MEETUP_APIKEY" 
+                
+                
+                 /> 
+
+       <field name="meetup_groupid" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_MEETUP_GROUPID"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_MEETUP_GROUPID" 
+                
+                
+                 /> 
+
+       <field name="fullprovisional" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_FULLPROVISIONAL"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_FULLPROVISIONAL" 
+                                                     default="1" 
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="teamdetails" type="textarea"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_TEAMDETAILS"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_TEAMDETAILS" 
+                
+                
+                 /> 
+
+       <field name="active" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_ACTIVE"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_ACTIVE" 
+                                                     default="0" 
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="version" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_VERSION"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_VERSION" 
+                                                     default="1" 
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="language" type="language"
+                
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_LANGUAGE"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_LANGUAGE" 
+                 default="*" 
+                
+                 /> 
+
+       <field name="hits" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_HITS"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_HITS" 
+                                                     default="0" 
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_USERGROUPS_FORM_LBL_USERGROUP_CREATED_BY"
+            description="COM_USERGROUPS_FORM_DESC_USERGROUP_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="0">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

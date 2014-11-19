@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_USERGROUPS_FORM_LBL_CONTACT_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="usergroupid" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_USERGROUPS_FORM_LBL_CONTACT_USERGROUPID"
+            description="COM_USERGROUPS_FORM_DESC_CONTACT_USERGROUPID" 
+                                                     default="0" 
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="user" type="user"
+                
+            label="COM_USERGROUPS_FORM_LBL_CONTACT_USER"
+            description="COM_USERGROUPS_FORM_DESC_CONTACT_USER" 
+                
+                
+                 /> 
+
+       <field name="contactname" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_CONTACT_CONTACTNAME"
+            description="COM_USERGROUPS_FORM_DESC_CONTACT_CONTACTNAME" 
+                
+                
+                 /> 
+
+       <field name="contactphone" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_CONTACT_CONTACTPHONE"
+            description="COM_USERGROUPS_FORM_DESC_CONTACT_CONTACTPHONE" 
+                
+                
+                 /> 
+
+       <field name="contactemail" type="text"
+                
+            label="COM_USERGROUPS_FORM_LBL_CONTACT_CONTACTEMAIL"
+            description="COM_USERGROUPS_FORM_DESC_CONTACT_CONTACTEMAIL" 
+                
+                
+                 /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_USERGROUPS_FORM_LBL_CONTACT_CREATED_BY"
+            description="COM_USERGROUPS_FORM_DESC_CONTACT_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="0">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<component>
+  <table action="add" table_name="#__usergroups" storage_engine="InnoDB" collation="utf8_general_ci">
+    <field field_name="id" field_type="INT" field_length="11" is_autoincrement="1" description=""/>
+    <field field_name="title" field_type="VARCHAR" field_length="255" description=""/>
+    <field field_name="slug" field_type="VARCHAR" field_length="255" description=""/>
+    <field field_name="catid" field_type="INT" field_length="11" description=""/>
+    <field field_name="categories" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="description" field_type="TEXT" description=""/>
+    <field field_name="meetinginfo" field_type="TEXT" description=""/>
+    <field field_name="location" field_type="VARCHAR" field_length="100" description=""/>
+    <field field_name="address" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="postcode" field_type="VARCHAR" field_length="10" description=""/>
+    <field field_name="city" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="region" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="country" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="lat" field_type="VARCHAR" field_length="10" description=""/>
+    <field field_name="lng" field_type="VARCHAR" field_length="10" description=""/>
+    <field field_name="website" field_type="VARCHAR" field_length="255" description=""/>
+    <field field_name="usergroupemail" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="logo" field_type="VARCHAR" field_length="100" description=""/>
+    <field field_name="photo" field_type="VARCHAR" field_length="100" description=""/>
+    <field field_name="twitter" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="linkedin" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="facebook" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="googleplus" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="rssfeed" field_type="VARCHAR" field_length="100" description=""/>
+    <field field_name="meetup_apikey" field_type="VARCHAR" field_length="100" description=""/>
+    <field field_name="meetup_groupid" field_type="VARCHAR" field_length="100" description=""/>
+    <field field_name="fullprovisional" field_type="TINYINT" field_length="3" description=""/>
+    <field field_name="teamdetails" field_type="TEXT" description=""/>
+    <field field_name="active" field_type="INT" field_length="3" description=""/>
+    <field field_name="ordering" field_type="INT" field_length="11" description=""/>
+    <field field_name="state" field_type="TINYINT" field_length="1" description=""/>
+    <field field_name="version" field_type="INT" field_length="10" description=""/>
+    <field field_name="language" field_type="VARCHAR" field_length="7" description=""/>
+    <field field_name="hits" field_type="INT" field_length="10" description=""/>
+    <field field_name="checked_out" field_type="INT" field_length="11" description=""/>
+    <field field_name="checked_out_time" field_type="DATETIME" description=""/>
+    <field field_name="created_by" field_type="INT" field_length="11" description=""/>
+    <field action="remove" field_name="contactname"/>
+    <field action="remove" field_name="contactemail"/>
+    <field action="remove" field_name="contactphone"/>
+    <field action="remove" field_name="contactname2"/>
+    <field action="remove" field_name="contactphone2"/>
+    <field action="remove" field_name="contactemail2"/>
+    <field action="remove" field_name="enabled"/>
+  </table>
+  <table action="add" table_name="#__usergroups_contacts" storage_engine="InnoDB" collation="utf8_general_ci">
+    <field field_name="id" field_type="INT" field_length="11" is_autoincrement="1" description=""/>
+    <field field_name="usergroupid" field_type="INT" field_length="11" description=""/>
+    <field action="add" field_name="user" field_type="INT" field_length="11" description=""/>
+    <field field_name="contactname" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="contactphone" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="contactemail" field_type="VARCHAR" field_length="50" description=""/>
+    <field field_name="ordering" field_type="INT" field_length="11" description=""/>
+    <field field_name="state" field_type="TINYINT" field_length="1" description=""/>
+    <field field_name="checked_out" field_type="INT" field_length="11" description=""/>
+    <field field_name="checked_out_time" field_type="DATETIME" description=""/>
+    <field field_name="created_by" field_type="INT" field_length="11" description=""/>
+  </table>
+</component>

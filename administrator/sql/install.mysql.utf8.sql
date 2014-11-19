@@ -1,0 +1,58 @@
+CREATE TABLE IF NOT EXISTS `#__usergroups` (
+`id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+
+`title` VARCHAR(255)  NOT NULL ,
+`slug` VARCHAR(255)  NOT NULL ,
+`catid` INT(11)  NOT NULL ,
+`categories` VARCHAR(50)  NOT NULL ,
+`description` TEXT NOT NULL ,
+`meetinginfo` TEXT NOT NULL ,
+`location` VARCHAR(100)  NOT NULL ,
+`address` VARCHAR(50)  NOT NULL ,
+`postcode` VARCHAR(10)  NOT NULL ,
+`city` VARCHAR(50)  NOT NULL ,
+`region` VARCHAR(50)  NOT NULL ,
+`country` VARCHAR(50)  NOT NULL ,
+`lat` VARCHAR(10)  NOT NULL ,
+`lng` VARCHAR(10)  NOT NULL ,
+`website` VARCHAR(255)  NOT NULL ,
+`usergroupemail` VARCHAR(50)  NOT NULL ,
+`logo` VARCHAR(100)  NOT NULL ,
+`photo` VARCHAR(100)  NOT NULL ,
+`twitter` VARCHAR(50)  NOT NULL ,
+`linkedin` VARCHAR(50)  NOT NULL ,
+`facebook` VARCHAR(50)  NOT NULL ,
+`googleplus` VARCHAR(50)  NOT NULL ,
+`rssfeed` VARCHAR(100)  NOT NULL ,
+`meetup_apikey` VARCHAR(100)  NOT NULL ,
+`meetup_groupid` VARCHAR(100)  NOT NULL ,
+`fullprovisional` TINYINT(3)  NOT NULL ,
+`teamdetails` TEXT NOT NULL ,
+`active` INT(3)  NOT NULL ,
+`ordering` INT(11)  NOT NULL ,
+`state` TINYINT(1)  NOT NULL ,
+`version` INT(10)  NOT NULL ,
+`language` VARCHAR(7)  NOT NULL ,
+`hits` INT(10)  NOT NULL ,
+`checked_out` INT(11)  NOT NULL ,
+`checked_out_time` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+`created_by` INT(11)  NOT NULL ,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT COLLATE=utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `#__usergroups_contacts` (
+`id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+
+`usergroupid` INT(11)  NOT NULL ,
+`user` INT(11)  NOT NULL ,
+`contactname` VARCHAR(50)  NOT NULL ,
+`contactphone` VARCHAR(50)  NOT NULL ,
+`contactemail` VARCHAR(50)  NOT NULL ,
+`ordering` INT(11)  NOT NULL ,
+`state` TINYINT(1)  NOT NULL ,
+`checked_out` INT(11)  NOT NULL ,
+`checked_out_time` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+`created_by` INT(11)  NOT NULL ,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT COLLATE=utf8_general_ci;
+
